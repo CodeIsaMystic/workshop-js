@@ -1,47 +1,50 @@
 import { absoluteValuesSumMinimization } from './absoluteValuesSumMinization';
 
-xdescribe(absoluteValuesSumMinimization.name, () => {
-    it('Test 1', () => {
-        // arrange
+
+
+describe(absoluteValuesSumMinimization.name, () => {
+    test('if it finds the 4 from the array data', () => {
         const data = [2, 4, 7];
+        const expected = absoluteValuesSumMinimization(data);
 
-        // act
-        const response = absoluteValuesSumMinimization(data);
-
-        // assert
-        expect(response).toBe(4);
+        expect(expected).toBe(4);
     });
 
-    it('Test 2', () => {
-        // arrange
-        const data = [2, 4, 7, 6];
-
-        // act
-        const response = absoluteValuesSumMinimization(data);
-
-        // assert
-        expect(response).toBe(4);
-    });
-
-    it('Test 3', () => {
-        // arrange
+    test('if it finds the 7 from the array data', () => {
         const data = [2, 4, 7, 6, 6];
+        const expected = absoluteValuesSumMinimization(data);
 
-        // act
-        const response = absoluteValuesSumMinimization(data);
-
-        // assert
-        expect(response).toBe(7);
+        expect(expected).toBe(7);
     });
 
-    it('Test 4', () => {
-        // arrange
-        const data = [2, 4, 7, 6, 6, 8];
 
-        // act
-        const response = absoluteValuesSumMinimization(data);
 
-        // assert
-        expect(response).toBe(7);
+    
+    test('From the a.length, it finds the medium integer value of the array', () => {
+        const data = [2, 4, 7];
+        const expected = absoluteValuesSumMinimization(data);
+
+        expect(expected).toBe(4);
+    });
+
+    test('From the a.length, it finds the medium integer value -1 of the array', () => {
+        const data = [2, 4, 7, 6];
+        const expected = absoluteValuesSumMinimization(data);
+
+        expect(expected).toBe(4);
+    });
+
+    test('From the a.length, it finds the medium integer value of the array', () => {
+        const data = [2, 4, 7, 6, 6];
+        const expected = absoluteValuesSumMinimization(data);
+
+        expect(expected).toBe(7);
+    });
+
+    test('From the a.length, it finds the medium integer value -1 of the array', () => {
+        const data = [2, 4, 7, 6, 6, 8]
+        const expected = absoluteValuesSumMinimization(data)
+
+        expect(expected).toBe(7)
     });
 });
