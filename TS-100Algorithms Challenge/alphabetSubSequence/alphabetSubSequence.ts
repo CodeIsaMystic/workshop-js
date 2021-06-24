@@ -1,5 +1,24 @@
-export function alphabetSubsequence(s: string): boolean {
+export function alphabetSubsequence(sequence: string): boolean {
+  const chars: string[] = sequence.split('')
+  const charValues: number[] = []
 
+
+  chars.forEach((char: string) => {
+    charValues.push(char.charCodeAt(0))
+  })
+
+  if(new Set(charValues).size !== charValues.length) {
+    return false
+  }
+
+  for (let i = 0; i < charValues.length - 1; i++) {
+    if(charValues[i] >= charValues[i + 1]) {
+      return false
+    }
+  }
+
+
+  return true
 }
 
 console.log(alphabetSubsequence('zab'))

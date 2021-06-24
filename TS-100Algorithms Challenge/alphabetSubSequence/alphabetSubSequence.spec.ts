@@ -1,25 +1,31 @@
-import { alphabetSubsequence } from './alphabetSubsequence';
+import { alphabetSubsequence } from './alphabetSubsequence'
 
-xdescribe(alphabetSubsequence.name, () => {
-    it('Test 1', () => {
-        // arrange
-        const data = 'effg';
+describe(alphabetSubsequence.name, () => {
+    it('should be false with CDCE as stringInput', () => {
+        const inputString = 'cdce'
+        const expected = alphabetSubsequence(inputString)
 
-        // act
-        const response = alphabetSubsequence(data);
+        expect(expected).toBe(false)
+    })
 
-        // assert
-        expect(response).toBe(false);
-    });
+    it('should be false with EFFG as stringInput', () => {
+        const inputString = 'effg'
+        const expected = alphabetSubsequence(inputString)
 
-    it('Test 2', () => {
-        // arrange
-        const data = 'ace';
+        expect(expected).toBe(false)
+    })
 
-        // act
-        const response = alphabetSubsequence(data);
+    it('should be true with ACE as stringInput', () => {
+        const inputString = 'ace'
+        const expected = alphabetSubsequence(inputString)
 
-        // assert
-        expect(response).toBe(true);
-    });
-});
+        expect(expected).toBe(true)
+    })
+
+    it('should be false with ZAB as stringInput', () => {
+        const inputString = 'zab'
+        const expected = alphabetSubsequence(inputString)
+
+        expect(expected).toBe(false)
+    })
+})

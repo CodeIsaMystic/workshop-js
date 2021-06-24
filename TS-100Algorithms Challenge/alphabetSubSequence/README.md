@@ -1,6 +1,6 @@
-### Check Out My [YouTube Channel](https://www.YouTube.com/CodingTutorials360)
 
----
+# ALPHABET SUBSEQUENCE
+
 Check whether the given string is a subsequence of the plaintext alphabet.
 
 **Example**
@@ -12,9 +12,9 @@ alphabetSubsequence(s) = false
 alphabetSubsequence(s) = true.
 
 **Hints**
--   size property
--   charCodeAt()
--   split()
+- size property
+- charCodeAt()
+- split()
 
 **Input/Output**
 
