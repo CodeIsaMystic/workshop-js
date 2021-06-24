@@ -1,18 +1,18 @@
-### Check Out My [YouTube Channel](https://www.YouTube.com/CodingTutorials360)
+### ADD TWO DIGITS
 
 ---
 You are given a two-digit integer n. Return the sum of its digits.
 
 **Example**
 
-For n = 29, the output should be
-addTwoDigits(n) = 11.
+For n = 29, the output should beaddTwoDigits(n) = 11.
 
 **Hint**
--   split()
--   parseInt()
--   toString()
--   reduce()
+
+- split()
+- parseInt()
+- toString()
+- reduce()
 
 **Input/Output**
 
