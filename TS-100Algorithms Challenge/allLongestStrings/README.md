@@ -1,5 +1,4 @@
-### Check Out My [YouTube Channel](https://www.YouTube.com/CodingTutorials360)
-
+### ALL LONGEST STRINGS
 ---
 Given an array of strings, return another array containing all of its longest strings.
 
@@ -9,7 +8,7 @@ For inputArray = ["aba", "aa", "ad", "vcd", "aba"], the output should be
 allLongestStrings(inputArray) = ["aba", "vcd", "aba"].
 
 **Hints**
--   None
+- None
 
 **Input/Output**
 

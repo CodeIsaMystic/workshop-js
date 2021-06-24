@@ -1,14 +1,11 @@
 import { allLongestStrings } from './allLongestStrings';
 
-xdescribe(allLongestStrings.name, () => {
-    it('Test 1', () => {
-        // arrange
+describe(allLongestStrings.name, () => {
+
+    it('find the longests words for words/strings and should be equal to ["aba", "vcd", "aba"]', () => {
         const data = ["aba", "aa", "ad", "vcd", "aba"];
+        const expected = allLongestStrings(data);
 
-        // act
-        const response = allLongestStrings(data);
-
-        // assert
-        expect(response).toEqual(["aba", "vcd", "aba"]);
-    });
-});
+        expect(expected).toEqual(["aba", "vcd", "aba"]);
+    })
+})
