@@ -1,25 +1,17 @@
 import { almostIncreasingSequence } from './almostIncreasingSequence';
 
-xdescribe(almostIncreasingSequence.name, () => {
+describe(almostIncreasingSequence.name, () => {
     it('Test 1', () => {
-        // arrange
         const data = [1, 3, 2, 1];
+        const expected = almostIncreasingSequence(data);
 
-        // act
-        const response = almostIncreasingSequence(data);
-
-        // assert
-        expect(response).toBe(false);
+        expect(expected).toBe(false);
     });
 
     it('Test 2', () => {
-        // arrange
         const data = [1, 3, 2];
+        const expected = almostIncreasingSequence(data);
 
-        // act
-        const response = almostIncreasingSequence(data);
-
-        // assert
-        expect(response).toBe(true);
+        expect(expected).toBe(true);
     });
 });
