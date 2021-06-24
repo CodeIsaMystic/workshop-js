@@ -1,19 +1,20 @@
 import { addBorder } from './addBorder';
 
-xdescribe(addBorder.name, () => {
-    it('Test 1', () => {
+
+describe(addBorder.name, () => {
+    test('the wall string variable should be added in the first and the last index to the picture array, the others indexes should start and finish with * ', () => {
         // arrange
-        const data = ['abc, ded'];
+        const picture = ['abc, ded'];
 
         // act
-        const response = addBorder(data);
+        const expected = addBorder(picture);
 
         // assert
-        expect(response).toEqual([
+        expect(expected).toBe([
             "*****",
             "*abc*",
             "*ded*",
             "*****"
-        ]);
-    });
-});
+        ])
+    })
+})

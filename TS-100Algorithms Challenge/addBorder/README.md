@@ -1,5 +1,5 @@
-### Check Out My [YouTube Channel](https://www.YouTube.com/CodingTutorials360)
----
+### ADDBORDER FUNCTION
+
 Given a rectangular matrix of characters, add a border of asterisks(*) to it.
 
 **Example**
@@ -10,17 +10,21 @@ For
            "ded"]
 the output should be
 
-    addBorder(picture) = ["*****",
-                      "*abc*",
-                      "*ded*",
-                      "*****"]
+    addBorder(picture) = [
+                            "*****",
+                            "*abc*",
+                            "*ded*",
+                            "*****"
+                         ]
 
-**Hints**
--   concat()
--   unshift()
--   push()
+**Hints:**
 
-**Input/Output**
+- concat()
+- unshift()
+- push()
+
+**Input / Output**
+
 - **[time limit] 4000ms (js)**
 - **[input] array.string picture**
 
