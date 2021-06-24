@@ -1,4 +1,4 @@
-### Check Out My [YouTube Channel](https://www.YouTube.com/CodingTutorials360)
+### ALPHABETIC SHIFT
 
 ---
 Given a string, replace each its character by the next one in the English alphabet (z would be replaced by a).
@@ -10,9 +10,9 @@ alphabeticShift(inputString) = "dsbaz".
 
 **Hints**
 
--   split()
--   indexOf()
--   join()
+- split()
+- indexOf()
+- join()
 
 **Input/Output**
 
