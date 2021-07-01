@@ -1,4 +1,4 @@
-import { convertToRomanNumeral } from "./roman-num-converter"
+import { convertToRomanNumeral } from "./romanNumConverter"
 
 
 describe('convertToRomanNumeral', () => {
